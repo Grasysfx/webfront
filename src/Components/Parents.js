@@ -11,10 +11,10 @@ const Parents = () => {
           <h1 className="section-title">Mano<span> t</span>eveliai</h1>
         </div>
         <div className="Parents-bottom">
-          <ParentsItem pictureSrc="../Images/Beatrice-img.jpg" title="Mamyte" description="Beatrice" />
-          <ParentsItem pictureSrc="./Images/Grazvydas-img.jpg" title="Tevelis" description="Grazvydas" />
-          <ParentsItem pictureSrc="./Images/Jolanta-img.jpg" title="Krikstamote" description="Jolanta" />
-          <ParentsItem pictureSrc="./Images/Deivydas-img.jpg" title="Krikstatevis" description="Deivydas" />
+          <ParentsItem imgSrc="../Images/Beatrice-img.jpg" title="Mamyte" description="Beatrice" />
+          <ParentsItem imgSrc="./Images/Grazvydas-img.jpg" title="Tevelis" description="Grazvydas" />
+          <ParentsItem imgSrc="./Images/Jolanta-img.jpg" title="Krikstamote" description="Jolanta" />
+          <ParentsItem imgSrc="./Images/Deivydas-img.jpg" title="Krikstatevis" description="Deivydas" />
         </div>
       </div>
     </section>

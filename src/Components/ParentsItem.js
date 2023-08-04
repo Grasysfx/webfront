@@ -1,10 +1,10 @@
 import React from "react";
 
-const ParentsItem = ({ pictureSrc, title, description }) => {
+const ParentsItem = ({ imgSrc, title, description }) => {
   return (
     <div className="Parents-item">
       <div className="picture">
-        <img src={pictureSrc} alt="picture" />
+        <img src={imgSrc} alt="img" />
       </div>
       <h2>{title}</h2>
       <p>{description}</p>
