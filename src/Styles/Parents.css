@@ -17,14 +17,14 @@
 	margin-top: 10px;
 }
 #Parents .Parents-item {
-	flex-basis: 80%;
+	flex-basis: 15%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(../Images/1.jpg); 
+	background-image: url(../Images/Pandukas.jpg); 
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;

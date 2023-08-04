@@ -9,12 +9,12 @@
 #Intro .Intro-header h1 {
 	margin-bottom: 50px;
 }
-#Intro .all-Intro {
+/* #Intro .all-Intro {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-}
+} */
 #Intro .Intro-item {
 	display: flex;
 	align-items: center;

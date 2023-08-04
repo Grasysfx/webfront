@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/About.css";
+import AboutImg from "../Images/About-me.jpeg";
 // import "../Styles/All.css";
 
 const About = () => {
@@ -8,7 +9,7 @@ const About = () => {
       <div className="about container">
         <div className="col-left">
           <div className="about-img">
-            <img src="./img/2.jpeg" alt="img" />
+            <img src={AboutImg} alt="img" />
           </div>
         </div>
         <div className="col-right">
