@@ -1,0 +1,29 @@
+.image-uploader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .upload-input {
+    margin-bottom: 10px;
+    	width: fit-content;
+  }
+  
+  .upload-input:hover {
+    background-color: crimson;
+  }
+  .upload-button {
+    
+    background-color: white;
+    font-size: 30px;
+    color: black;
+    border: 2px solid crimson;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-button:hover {
+    background-color: crimson;
+  }

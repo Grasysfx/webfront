@@ -1,7 +1,6 @@
 import React from "react";
 import ContactItem from "./ContactItem";
-import "../Styles/Contact.css";
-// import "../Styles/All.css";
+import "../../Styles/Contact.css";
 
 const Contact = () => {
   return (

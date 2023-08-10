@@ -9,12 +9,12 @@
 #Intro .Intro-header h1 {
 	margin-bottom: 50px;
 }
-/* #Intro .all-Intro {
+#Intro .all-Intro {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-} */
+}
 #Intro .Intro-item {
 	display: flex;
 	align-items: center;
@@ -50,7 +50,7 @@
 }
 #Intro .Intro-img {
 	flex-basis: 50%;
-	height: 30px;
+	height: 100%;
 	overflow: hidden;
 	position: relative;
 }
@@ -71,3 +71,24 @@
 	transform: scale(1.1);
 }
 
+@media only screen and (min-width: 768px) {
+
+#Intro .Intro-item {
+	flex-direction: row;
+}
+#Intro .Intro-item:nth-child(even) {
+	flex-direction: row-reverse;
+}
+#Intro .Intro-item {
+	height: 400px;
+	margin: 0;
+	width: 100%;
+	border-radius: 0;
+}
+#Intro .all-Intro .Intro-info {
+	height: 100%;
+}
+#Intro .all-Intro .Intro-img {
+	height: 100%;
+}
+}

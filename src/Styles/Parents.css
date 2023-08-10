@@ -1,9 +1,12 @@
 #Parents .Parents {
 	flex-direction: column;
 	text-align: center;
-	max-width: 1500px;
+	max-width: 2000px;
 	margin: 0 auto;
 	padding: 100px 0;
+	background-image: url(../Images/Hearts.jpg); 
+	background-size: 90%;
+	
 }
 #Parents .Parents-top {
 	max-width: 500px;
@@ -24,8 +27,7 @@
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(../Images/Pandukas.jpg); 
-	background-size: cover;
+
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
@@ -39,7 +41,7 @@
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.0;
+	opacity: 1.0;
 	z-index: -1;
 }
 #Parents .Parents-bottom .icon {
@@ -49,7 +51,7 @@
 }
 #Parents .Parents-item h2 {
 	font-size: 2rem;
-	color: white;
+	color: rgb(241, 235, 235);
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
@@ -57,3 +59,10 @@
 	color: white;
 	text-align: left;
 }
+/* @media only screen and (min-width: 768px) {
+
+	#Parents .Parents-bottom .Parents-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+} */

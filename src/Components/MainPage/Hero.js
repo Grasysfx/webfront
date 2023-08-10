@@ -1,6 +1,6 @@
 import React from "react";
-import "../Styles/Hero.css";
-// import "../Styles/All.css";
+import { Link } from 'react-router-dom';
+import "../../Styles/Hero.css";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
           <h1>Sveiki, <span></span></h1>
           <h1>Mano vardas yra <span></span></h1>
           <h1>Gabija <span></span></h1>
-          <a href="#Intro" type="button" className="cta">Nuotraukos</a>
+          <Link to="/LogIn" className="cta">Prisijungti</Link>
         </div>
       </div>
     </section>

@@ -1,28 +1,30 @@
-#hero {
+#heroLogin {
 	background-image: url(../Images/HeroImg.jpg);
 	background-size: cover;
-	background-position:  center;
+	background-position: center;
 	position: relative;
-	z-index:1;
+	z-index:0;
+
 }
-#hero::after {
+#heroLogin::after {
 	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	opacity: 0.6;
 	z-index: -1;
 }
-#hero .hero {
+#heroLogin .heroLogin {
+
 	max-width: 2500px;
-	margin: 0 auto;
+	margin:  auto;
 	padding: 0 50px;
-	justify-content: flex-start;
+	justify-content: flex;
 }
-#hero h1 {
+#heroLogin h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
@@ -31,17 +33,17 @@
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
 }
-#hero h1:nth-child(1) {
+#heroLogin h1:nth-child(1) {
 	animation-delay: 1s;
 }
-#hero h1:nth-child(2) {
+#heroLogin h1:nth-child(2) {
 	animation-delay: 2s;
 }
-#hero h1:nth-child(3) {
+#heroLogin h1:nth-child(3) {
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
-#hero h1 span {
+#heroLogin h1 span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -51,21 +53,19 @@
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(1) span {
+#heroLogin h1:nth-child(1) span {
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(2) span {
+#heroLogin h1:nth-child(2) span {
 	animation-delay: 1.5s;
 }
-#hero h1:nth-child(3) span {
+/* #heroLogin h1:nth-child(3) span {
 	animation-delay: 2.5s;
-}
-
-
+} */
 
 @media only screen and (min-width: 768px) {
 
-	#hero h1 {
+	#heroLogin h1 {
 		font-size: 7rem;
 	}
 }

@@ -1,14 +1,11 @@
 import React from "react";
 import IntroItem from "./IntroItems";
-import "../Styles/Intro.css";
-import Panda from "../Images/Pandukas.jpg"; 
-import Training from "../Images/Manksta.jpeg"; 
-import Smile from "../Images/Sypsena.jpeg"; 
-import Sleep from "../Images/Miegas.jpg"; 
-import Cont from "../Images/Continue.jpg"; 
-
-
-// import "../Styles/All.css";
+import "../../Styles/Intro.css";
+import Panda from "../../Images/Pandukas.jpg"
+import Training from "../../Images/Manksta.jpeg"; 
+import Smile from "../../Images/Sypsena.jpeg"; 
+import Sleep from "../../Images/Miegas.jpg"; 
+import Cont from "../../Images/Continue.jpg"; 
 
 const Intro = () => {
   return (
