@@ -3,8 +3,6 @@ import ImgLibHero from "../Components/PictureContainerPage/ImageLibHero";
 import ImageUploadPage from "../Components/PictureContainerPage/ImageUploadPage";
 import Footer from "../Components/MainPage/Footer";
 
-
-
 function ImageLibrary() {
   return (
       <div>

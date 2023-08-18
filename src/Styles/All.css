@@ -1,4 +1,4 @@
-/* Keyframes */
+
 @keyframes hamburger_puls {
 	0% {
 		opacity: 1;
@@ -30,18 +30,11 @@
 		font-weight: 500;
 	}
 }
-/* End Keyframes */
 
-/* Media Query For Tablet */
+
+
 @media only screen and (min-width: 768px) {
 
-
-
-
-
-
-
-	/* contact  */
 	#contact .contact {
 		flex-direction: column;
 		padding: 100px 0;
@@ -73,13 +66,12 @@
 		text-align: left;
 		padding-left: 20px;
 	}
-	/* End contact  */
-}
-/* End Media Query For Tablet */
 
-/* Media Query For Desktop */
+}
+
+
 @media only screen and (min-width: 1200px) {
-	/* header */
+	
 	#header .hamburger {
 		display: none;
 	}
@@ -99,11 +91,10 @@
 	#header .nav-list ul a:after {
 		display: none;
 	}
-	/* End header */
+	
 
 	#Parents .Parents-bottom .Parents-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */

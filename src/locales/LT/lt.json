@@ -1,0 +1,144 @@
+{
+    "home": "Pradžia",
+    "myPhotos": "Mano nuotraukytės",
+    "aboutMe": "Apie mane",
+    "contact": "Kontaktinė informacija",
+
+
+    "language": "EN",
+    "toggleLanguageEN": "Keisti kalbą į anglų",
+    "toggleLanguageLT": "Pakeisti kalbą į lietuvių",
+
+
+    "welcome": "Sveiki,",
+    "myNameIs": "Mano vardas yra",
+    "name": "Gabija",
+    "login": "Prisijungti",
+
+
+    "loginWelcome": "Sveiki,",
+    "loginName": "Mano vardas yra",
+    "loginPlease": "Prašome",
+    "loginSignIn": "prisijungti",
+
+
+    "imgLibWelcome": "Lankotės",
+    "my": "Mano",
+    "photoalbum": "Fotoalbume",
+  
+
+    "uploadPhotos": "Įkelkite nuotraukas",
+    "uploadImageButton": "Įkelti nuotrauką",
+    "uploadedPhotos": "Įkeltos nuotraukos",
+
+
+    "parents": {
+        "sectionTitle": "Mano tėveliai ir Seneliai",
+        "data": [
+          {
+            "imgSrc": "Mother.jpg",
+            "titles": {
+              "en": "Mother",
+              "lt": "Mamyte"
+            },
+            "description": "Beatrice"
+          },
+          {
+            "imgSrc": "Father.jpg",
+            "titles": {
+              "en": "Father",
+              "lt": "Tevelis"
+            },
+            "description": "Grazvydas"
+          },
+          {
+            "imgSrc": "Gmother.jpg",
+            "titles": {
+              "en": "Godmother",
+              "lt": "Kriksto mama"
+            },
+            "description": "Jolanta"
+          },
+          {
+            "imgSrc": "Gfather.jpg",
+            "titles": {
+              "en": "Godfather",
+              "lt": "Krikstatevis"
+            },
+            "description": "Deivydas"
+          },
+          {
+            "imgSrc": "Gfather.jpg",
+            "titles": {
+              "en": "Grandfather",
+              "lt": "Senelis"
+            },
+            "description": ""
+          },
+          {
+            "imgSrc": "Gfather.jpg",
+            "titles": {
+              "en": "Grandmother",
+              "lt": "Senele"
+            },
+            "description": ""
+          },
+          {
+            "imgSrc": "Gfather.jpg",
+            "titles": {
+              "en": "Great-grandfather",
+              "lt": "BSenelis"
+            },
+            "description": ""
+          },
+          {
+            "imgSrc": "Gfather.jpg",
+            "titles": {
+              "en": "Great-grandmother",
+              "lt": "BSenele"
+            },
+            "description": ""
+          }
+        ]
+      },
+
+    "introTitle1": " Mano",
+    "introTitle2": " nuotraukytės",
+    "pandaTitle": "Aš ir mano pandukas",
+    "pandaDescription": "Niekad nenukreipiu nuo jo akių",
+    "trainingTitle": "Rytinė mankšta",
+    "trainingDescription": "Mes norime būti stiprūs!!!",
+    "smileTitle": "Nenutrūkstantis šypsena",
+    "smileDescription": "Vitaminas C dar niekam nepakenkė",
+    "sleepTitle": "ZzzzzZZZZzzz",
+    "sleepDescription": "Saldus miegas taip pat būtinas",
+    "continueTitle": "Laukite daugiau",
+    "continueDescription": "",
+
+
+    "username": "Prisijungimo vardas",
+    "password": "Slaptažodis",
+    "loginButton": "Prisijungti",
+    "loginFailed": "Prisijungimas Nepavyko",
+    "invalidCredentials": "Neteisingai įvestas prisijungimo vardas arba slaptažodis",
+
+
+    "aboutTitle": "Apie Mane",
+    "aboutDescription": "Esu pats gražiausias beibis pasaulyje",
+    "downloadPhotos": "Parsisiųsti nuotraukas",
+
+
+    "contactTitle": "Kontaktinė informacija",
+    "phoneTitle": "Telefonas",
+    "phoneInfo": "Dar telefono neįsigijau",
+    "emailTitle": "El. paštas",
+    "emailInfo": "GabijaKazdailyte@gmail.com",
+    "addressTitle": "Adresas",
+    "addressInfo": "Telšiai, Lietuva",
+
+    
+    "brandPart1": "abija",
+    "brandPart2": "aždailytė",
+    "personalPage": "Asmeninis puslapis",
+    "copyright": "Autorių teisės © 2023 Gražvydas Každailis. Visos teisės saugomos"
+  }

@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import "../../Styles/ImageUploader.css";
+import { useLanguage } from '../../locales/LanguageContext';
+import enTranslations from '../../locales/EN/en.json';
+import ltTranslations from '../../locales/LT/lt.json';
 
 const ImageUploader = ({ onImageUpload }) => {
+  const { language } = useLanguage();
+  const translations = language === 'en' ? enTranslations : ltTranslations;
+
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageChange = (event) => {
@@ -20,7 +26,7 @@ const ImageUploader = ({ onImageUpload }) => {
     <div className="image-uploader">
       <input className="upload-input" type="file" onChange={handleImageChange} />
       <button className="upload-button" onClick={handleUploadClick}>
-        Įkelti nuotrauką
+        {translations.uploadImageButton}
       </button>
     </div>
   );

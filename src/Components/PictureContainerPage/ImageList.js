@@ -2,40 +2,46 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import ImageModal from "./ImageModal";
 import "../../Styles/ImageList.css";
+import ImageItem from "./ImageItem";
+import { useLanguage } from '../../locales/LanguageContext';
+import enTranslations from '../../locales/EN/en.json';
+import ltTranslations from '../../locales/LT/lt.json';
 
-const ImageList = ({ images }) => {
-  const [selectedImage, setSelectedImage] = useState(null);
+const ImageList = ({ images, onRemoveImage }) => {
+  const { language } = useLanguage();
+  const translations = language === 'en' ? enTranslations : ltTranslations;
 
-  const handleImageClick = (image) => {
-    setSelectedImage(image);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+
+  const handleImageClick = (index) => {
+    setSelectedImageIndex(index);
   };
 
   const handleCloseModal = () => {
-    setSelectedImage(null);
+    setSelectedImageIndex(null);
   };
 
   return (
     <div className="image-list-container">
-      <h2 className="image-title">Įkeltos nuotraukos:</h2>
+      <h2 className="image-title">{translations.uploadedPhotos}:</h2>
       <ul className="image-list">
         {images.map((image, index) => (
-          <li
-            className="image-item"
+          <ImageItem
             key={index}
-            onClick={() => handleImageClick(image)}
-          >
-            <div className="image-frame">
-              <img
-                className="uploaded-image"
-                src={URL.createObjectURL(image)}
-                alt={`Nuotrauka ${index}`}
-              />
-            </div>
-          </li>
+            index={index}
+            image={image}
+            onImageClick={handleImageClick}
+            onRemoveImage={onRemoveImage}
+          />
         ))}
       </ul>
-      {selectedImage && (
-        <ImageModal image={selectedImage} onClose={handleCloseModal} />
+      {selectedImageIndex !== null && (
+        <ImageModal
+          images={images}
+          onClose={handleCloseModal}
+          selectedImageIndex={selectedImageIndex}
+          onRemoveImage={onRemoveImage}
+        />
       )}
     </div>
   );
@@ -43,6 +49,7 @@ const ImageList = ({ images }) => {
 
 ImageList.propTypes = {
   images: PropTypes.array.isRequired,
+  onRemoveImage: PropTypes.func.isRequired,
 };
 
 export default ImageList;

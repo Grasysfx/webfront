@@ -1,9 +1,14 @@
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../Styles/Header.css";
+import { useLanguage } from '../../locales/LanguageContext'; 
+import enTranslations from '../../locales/EN/en.json'; 
+import ltTranslations from '../../locales/LT/lt.json'; 
 
 const Header = () => {
+  const { language, setLanguage } = useLanguage();
+  const translations = language === 'en' ? enTranslations : ltTranslations;
+
   useEffect(() => {
     const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
     const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
@@ -35,13 +40,21 @@ const Header = () => {
     }
   }, []);
   
+  const handleToggleLanguage = () => {
+    if (language === 'en') {
+      setLanguage('lt');
+    } else {
+      setLanguage('en');
+    }
+  };
+
   return (
     <section id="header">
       <div className="header container">
         <div className="nav-bar">
           <div className="brand">
             <a href="#hero">
-              <h1><span>G</span>abija <span>K</span>azdailyte</h1>
+              <h1><span>G</span>{translations.brandPart1} <span>K</span>{translations.brandPart2}</h1>
             </a>
           </div>
           <div className="nav-list">
@@ -49,10 +62,13 @@ const Header = () => {
               <div className="bar"></div>
             </div>
             <ul>
-              <li><a href="#hero" data-after="Pradzia">Pradzia</a></li>
-              <li><Link to="/ImageLibrary" data-after="Mano nuotraukytes">Mano nuotraukytes</Link></li>
-              <li><a href="#about" >Apie mane</a></li>
-              <li><a href="#contact" data-after="Kontaktine informacija">Kontaktine informacija</a></li>
+            
+              <li><a href="#hero" data-after={translations.home}>{translations.home}</a></li>
+              <li><Link to="/ImageLibrary" data-after={translations.myPhotos}>{translations.myPhotos}</Link></li>
+              <li><a href="#about" >{translations.aboutMe}</a></li>
+              <li><a href="#contact" data-after={translations.contact}>{translations.contact}</a></li>
+              <li><button className="language-toggle rounded"onClick={handleToggleLanguage}title={translations.toggleLanguageTitle}>{translations.language}</button></li>
+
             </ul>
           </div>
         </div>

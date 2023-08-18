@@ -1,7 +1,13 @@
-import React, {useEffect, useState} from "react";
+
+import React, { useState } from "react";
+import { useLanguage } from '../../locales/LanguageContext'; 
+import enTranslations from '../../locales/EN/en.json'; 
+import ltTranslations from "../../locales/LT/lt.json"; 
 import "../../Styles/LoginForm.css";
 
 const LoginForm = () => {
+    const { language } = useLanguage();
+    const translations = language === 'en' ? enTranslations : ltTranslations;
 
     const [popupStyle, showPopup] = useState("hide")
 
@@ -12,15 +18,15 @@ const LoginForm = () => {
 
     return (
         <div className="cover">
-            <input type="text" placeholder="Prisijungimo vardas" />
-            <input type="password" placeholder="Slaptazodis" />
-            <div className="login-btn" onClick={popup}>Prisijungti</div>
+            <input type="text" placeholder={translations.username} />
+            <input type="password" placeholder={translations.password} />
+            <div className="login-btn" onClick={popup}>{translations.loginButton}</div>
             <div className={popupStyle}>
-                <h3>Prisijungimas Nepavyko</h3>
-                <h4>Neteisingai ivestas prisijungimo vardas arba slaptazodis</h4>
-            </div>            
+                <h3>{translations.loginFailed}</h3>
+                <h4>{translations.invalidCredentials}</h4>
+            </div>
         </div>
     )
 }
 
-export default LoginForm
+export default LoginForm;

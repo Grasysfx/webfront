@@ -6,20 +6,27 @@ import Training from "../../Images/Manksta.jpeg";
 import Smile from "../../Images/Sypsena.jpeg"; 
 import Sleep from "../../Images/Miegas.jpg"; 
 import Cont from "../../Images/Continue.jpg"; 
+import { useLanguage } from '../../locales/LanguageContext'; 
+import enTranslations from '../../locales/EN/en.json'; 
+import ltTranslations from '../../locales/LT/lt.json'; 
+
 
 const Intro = () => {
+  const { language } = useLanguage();
+  const translations = language === 'en' ? enTranslations : ltTranslations;
+
   return (
     <section id="Intro">
       <div className="Intro container">
         <div className="Intro-header">
-          <h1 className="section-title">Mano <span>nuotraukytes</span></h1>
+          <h1 className="section-title">{translations.introTitle1}<span>{translations.introTitle2}</span></h1>
         </div>
         <div className="Intro-bottom">
-          <IntroItem imgSrc={Panda} title="As ir mano pandukas" description="Niekad nenuleidziu nuo jo akiu" />
-          <IntroItem imgSrc={Training} title="Rytine manksta" description="Mes norime buti stiprus!!!" />
-          <IntroItem imgSrc={Smile} title="Negaliu nesisypsoti" description="Vitaminas C dar niekam nepakenke" />
-          <IntroItem imgSrc={Sleep} title="ZzzzzZZZZzzz" description="Saldus miegas taip pat reikalingas" />
-          <IntroItem imgSrc={Cont} title="Laukite tesinio" description="" />
+          <IntroItem imgSrc={Panda} title={translations.pandaTitle} description={translations.pandaDescription} />
+          <IntroItem imgSrc={Training} title={translations.trainingTitle} description={translations.trainingDescription} />
+          <IntroItem imgSrc={Smile} title={translations.smileTitle} description={translations.smileDescription} />
+          <IntroItem imgSrc={Sleep} title={translations.sleepTitle} description={translations.sleepDescription} />
+          <IntroItem imgSrc={Cont} title={translations.continueTitle} description={translations.continueDescription} />
         </div>
       </div>
     </section>

@@ -1,0 +1,146 @@
+{
+    "home": "Home",
+    "myPhotos": "My Photos",
+    "aboutMe": "About Me",
+    "contact": "Contact Information",
+
+
+    "language": "LT",
+    "toggleLanguageEN": "Change Language to English",
+    "toggleLanguageLT": "Change Language to Lithuanian",
+
+
+    "welcome": "Hello,",
+    "myNameIs": "My name is",
+    "name": "Gabija",
+    "login": "Log In",
+
+
+    "loginWelcome": "Welcome,",
+    "loginName": "My name is",
+    "loginPlease": "Please",
+    "loginSignIn": "sign in",
+
+
+    "imgLibWelcome": "Visiting",
+    "my": "My",
+    "photoalbum": "Photoalbum",
+
+   
+    "uploadPhotos": "Upload Photos",
+    "uploadImageButton": "Upload Image",
+    "uploadedPhotos": "Uploaded photos",
+
+
+    "parents": {
+        "sectionTitle": "My Parents and Grandparents",
+        "data": [
+          {
+            "imgSrc": "Mother.jpg",
+            "titles": {
+              "en": "Mother",
+              "lt": "Mamyte"
+            },
+            "description": "Beatrice"
+          },
+          {
+            "imgSrc": "Father.jpg",
+            "titles": {
+              "en": "Father",
+              "lt": "Tevelis"
+            },
+            "description": "Grazvydas"
+          },
+          {
+            "imgSrc": "Gmother.jpg",
+            "titles": {
+              "en": "Godmother",
+              "lt": "Kriksto mama"
+            },
+            "description": "Jolanta"
+          },
+          {
+            "imgSrc": "Gfather.jpg",
+            "titles": {
+              "en": "Godfather",
+              "lt": "Krikstatevis"
+            },
+            "description": "Deivydas"
+          },
+          {
+            "imgSrc": "GrandparentsG.jpeg",
+            "titles": {
+              "en": "Grandfather",
+              "lt": "Senelis"
+            },
+            "description": ""
+          },
+          {
+            "imgSrc": "Gfather.jpg",
+            "titles": {
+              "en": "Grandmother",
+              "lt": "Senele"
+            },
+            "description": ""
+          },
+          {
+            "imgSrc": "Gfather.jpg",
+            "titles": {
+              "en": "Great-grandfather",
+              "lt": "BSenelis"
+            },
+            "description": ""
+          },
+          {
+            "imgSrc": "Gfather.jpg",
+            "titles": {
+              "en": "Great-grandmother",
+              "lt": "BSenele"
+            },
+            "description": ""
+          }
+        ]
+      },
+
+    "introTitle1": " My",
+    "introTitle2": " photos",
+    "pandaTitle": "Me and My Panda",
+    "pandaDescription": "I never take my eyes off it",
+    "trainingTitle": "Morning Exercise",
+    "trainingDescription": "We want to be strong!!!",
+    "smileTitle": "Can't Stop Smiling",
+    "smileDescription": "Vitamin C has never done anyone harm",
+    "sleepTitle": "ZzzzzZZZZzzz",
+    "sleepDescription": "Sweet sleep is also necessary",
+    "continueTitle": "Stay Tuned for More",
+    "continueDescription": "",
+
+  
+    "username": "Username",
+    "password": "Password",
+    "loginButton": "Log In",
+    "loginFailed": "Login Failed",
+    "invalidCredentials": "Invalid username or password",
+
+
+    "aboutTitle": "About Me",
+    "aboutDescription": "I am the most beautiful baby in the world",
+    "downloadPhotos": "Download Photos",
+
+
+    "contactTitle": "Contact Information",
+    "phoneTitle": "Phone",
+    "phoneInfo": "Haven't got a phone yet",
+    "emailTitle": "Email",
+    "emailInfo": "GabijaKazdailyte@gmail.com",
+    "addressTitle": "Address",
+    "addressInfo": "Telsiai, Lithuania",
+
+
+    "brandPart1": "abija",
+    "brandPart2": "azdailyte",
+    "personalPage": "Personal Page",
+    "copyright": "Copyright © 2023 Grazvydas Kazdailis. All rights reserved"
+  }
+
+  

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Button, Container } from "react-bootstrap"
+import React from 'react';
+import { Button, } from "react-bootstrap"
 import Header from "../Components/MainPage/Header";
 import Hero from "../Components/MainPage/Hero";
 import Parents from "../Components/MainPage/Parents"

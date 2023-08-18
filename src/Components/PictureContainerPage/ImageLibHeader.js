@@ -1,9 +1,14 @@
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../Styles/ImgLibHeader.css";
+import { useLanguage } from '../../locales/LanguageContext'; 
+import enTranslations from '../../locales/EN/en.json'; 
+import ltTranslations from "../../locales/LT/lt.json"; 
 
 const ImageLibHeader = () => {
+  const { language, setLanguage } = useLanguage(); 
+  const translations = language === 'en' ? enTranslations : ltTranslations; 
+
   useEffect(() => {
     const hamburger = document.querySelector('.HeaderLogin .nav-bar .nav-list .hamburger');
     const mobile_menu = document.querySelector('.HeaderLogin .nav-bar .nav-list ul');
@@ -34,14 +39,23 @@ const ImageLibHeader = () => {
       };
     }
   }, []);
-  
+
+  const handleToggleLanguage = () => {
+    if (language === 'en') {
+      setLanguage('lt');
+    } else {
+      setLanguage('en');
+    }
+  };
+
+
   return (
     <section id="HeaderLogin">
       <div className="HeaderLogin container">
         <div className="nav-bar">
           <div className="brand">
             <a href="#hero">
-              <h1><span>G</span>abija <span>K</span>azdailyte</h1>
+              <h1><span>G</span>abija <span>K</span>aždailytė</h1>
             </a>
           </div>
           <div className="nav-list">
@@ -49,11 +63,17 @@ const ImageLibHeader = () => {
               <div className="bar"></div>
             </div>
             <ul>
-              <li><Link to="/" data-after="Pradzia">Gryzti i pradzia</Link></li>
+              <li><Link to="/" data-after={translations.home}>{translations.home}</Link></li>           
+              {/* <li><Link to="/ImageLibrary" data-after={translations.myPhotos}>{translations.myPhotos}</Link></li> */}
+              {/* <li><Link to="/#about" data-after={translations.aboutMe}>{translations.aboutMe}</Link></li> */}
+              {/* <li><Link to="/#contact" data-after={translations.contact}>{translations.contact}</Link></li> */}
+              <li><button className="language-toggle rounded"onClick={handleToggleLanguage}title={translations.toggleLanguageTitle}>{translations.language}</button></li>
             </ul>
+           
+            </div>
           </div>
         </div>
-      </div>
+     
     </section>
   );
 };
